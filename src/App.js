@@ -1,10 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Explorer from "./Components/Explorer";
+import { useState } from "react";
+import explorerData from "./Data/Data";
+import Homepage from "./Pages/Homepage";
 
 function App() {
+  const [explorer, setExplorerData] = useState(explorerData);
+  console.log("main", explorer);
   return (
     <div className="App">
-      <header className="App-header">
+      {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +23,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+  </header>*/}
+      <Homepage explorer={explorer} />
+      {/*<Explorer explorer={explorer} />*/}
     </div>
   );
 }

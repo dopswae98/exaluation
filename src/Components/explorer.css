@@ -1,0 +1,23 @@
+.folder {
+    margin-top: 6px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    width: 300px;
+}
+
+.folder>span {
+    margin: 0 5px 2px 0;
+}
+
+.file {
+    margin-top: 50px;
+    padding-left: 5px;
+    flex-direction: column;
+}
+
+.folder>div>button {
+    font-size: 15px;
+    background-color: #fff;
+}
